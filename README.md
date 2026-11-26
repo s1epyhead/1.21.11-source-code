@@ -1,13 +1,13 @@
 # Blocks Client
 
-A crystal PvP and base-hunting utility client for **Fabric**. This project builds the **Minecraft 1.21.11** version.
+A crystal PvP and base-hunting utility client for **Fabric**. This project builds the **Minecraft 26.3** version.
 It's meant for singleplayer, private servers and anarchy servers that allow clients like this.
 Settings live in `config/blocks`. If you used Summer Client before, its profiles and schematics are copied over automatically.
 
 ## Install
 
-1. Install [Fabric Loader](https://fabricmc.net/use/) for Minecraft 1.21.11, plus the matching **Fabric API**.
-2. Drop `blocks-client-1.0.0+1.21.11.jar` into `.minecraft/mods` (Java 21).
+1. Install [Fabric Loader](https://fabricmc.net/use/) for Minecraft 26.3, plus the matching **Fabric API**.
+2. Drop `blocks-client-1.0.0+26.3.jar` into `.minecraft/mods` (Java 25).
 3. In game, press **Right Shift** to open the menu.
 
 ## The menu
@@ -144,13 +144,13 @@ How it builds:
 
 ## Build from source
 
-Gradle (Loom 1.20) runs on JDK 25. The jar targets Java 21.
+Gradle (Loom 1.20) runs on JDK 25. The jar targets Java 25.
 
 ```bash
 ./gradlew build
 ```
 
-The jar lands in `build/libs/blocks-client-1.0.0+1.21.11.jar`.
+The jar lands in `build/libs/blocks-client-1.0.0+26.3.jar`.
 
 The in-game test creates a superflat world, checks the finders, Auto Crystal, anchors, Auto Mine and Auto Builder,
 then saves screenshots to `build/run/clientGameTest/screenshots`:

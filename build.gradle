@@ -1,6 +1,6 @@
-// 1.21.11 is the last obfuscated release, so this uses the remapping Loom plugin with Mojang's official mappings.
+// 26.x ships unobfuscated, so there are no mappings and no remapping.
 plugins {
-    id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
 }
 
 version = "${project.mod_version}+${project.minecraft_version}"
@@ -12,9 +12,8 @@ base {
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings loom.officialMojangMappings()
-    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
 processResources {

@@ -9,4 +9,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'blocks-client-1.21.11'
+rootProject.name = 'blocks-client-26.3'
